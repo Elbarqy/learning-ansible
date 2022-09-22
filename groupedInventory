@@ -1,0 +1,15 @@
+[firstGroup]
+f-1 ansible_host=192.168.1.20
+f-2 ansible_host=192.168.1.24
+f-3 ansible_host=192.168.1.23
+f-4 ansible_host=192.168.1.22
+
+[secondGroup]
+s-4 ansible_host=192.168.1.31
+s-4 ansible_host=192.168.1.32
+s-4 ansible_host=192.168.1.33
+s-4 ansible_host=192.168.1.34
+
+[both:children]
+firstGroup
+secondGroup

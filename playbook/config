@@ -1,0 +1,7 @@
+Host database* dotcom* server* web*
+    user root
+    IdentityFile ~/.ssh/id_rsa
+Host database01
+    hostname x.x.x.x
+Host dotcom
+    hostname x.x.x.x

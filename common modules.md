@@ -24,3 +24,8 @@
 - cron
 - user
 - seboolean
+
+
+========================
+
+dependencies can be listed under meta folder in a role

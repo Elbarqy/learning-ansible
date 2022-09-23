@@ -13,3 +13,6 @@ s-4 ansible_host=192.168.1.34
 [both:children]
 firstGroup
 secondGroup
+
+[both:vars]
+ansible_user=ubuntu

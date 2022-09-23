@@ -1,0 +1,15 @@
+---
+- hosts: vm
+  become: true
+  tasks:
+    - name: install nginx
+      apt:
+        name: nginx
+        state: latest
+      notify: restart nginx
+  handlers:
+    - name: restart nginx
+      service:
+        name: nginx
+        enabled: true
+        state: restarted

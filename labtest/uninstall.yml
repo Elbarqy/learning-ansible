@@ -1,0 +1,15 @@
+---
+- hosts: vm
+  become: true
+  tasks:
+    - name: stop nginx
+      service:
+        name: nginx
+        enabled: no
+        state: stopped
+    - name: uninstall ubuntu
+      apt:
+        name: nginx
+        purge: yes
+        state: absent
+        autoremove: yes

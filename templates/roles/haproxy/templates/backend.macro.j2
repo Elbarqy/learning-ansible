@@ -1,0 +1,3 @@
+{% macro backend(name, ip, port=8080)-%}
+    server {{name}} {{ip}}:{{port}} check
+{%- endmacro%}
